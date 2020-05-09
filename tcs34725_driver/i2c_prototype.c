@@ -9,7 +9,7 @@
 int main (void)
 {
 	int fd;
-	uint8_t id, 
+	uint8_t id; 
 	uint16_t r, g, b, c;
 	struct timespec integration_time; /* Gerekli bekleme süresi */
 	integration_time.tv_sec = 0;
