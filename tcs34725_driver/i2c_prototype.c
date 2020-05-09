@@ -33,9 +33,9 @@ int main (void)
 	{
 		nanosleep(&integration_time, NULL);
 		c = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_CDATAH));
-		r = (uint8_t) (wiringPiI2CReadReg16 (fd, REG_RDATAH));
-		g = (uint8_t) (wiringPiI2CReadReg16 (fd, REG_GDATAH));
-		b = (uint8_t) (wiringPiI2CReadReg16 (fd, REG_BDATAH));
+		r = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_RDATAH));
+		g = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_GDATAH));
+		b = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_BDATAH));
 		printf	("Clear: %x 	RGB:#%x%x%x", c, r, g, b);
 	}
 	return (0)
