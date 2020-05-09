@@ -2,6 +2,7 @@
 #include <wiringPiI2C.h>
 #include <stdio.h>
 #include <time.h>
+#include <stdint.h>
 #include "tcs34725.h"
 
 
@@ -11,7 +12,7 @@ int main (void)
 	uint8_t id, r, g, b, c;
 	struct timespec integration_time; /* Gerekli bekleme süresi */
 	integration_time.tv_sec = 0;
-	integration_time.tv_nsec = INT_TIME /* 101 ms */
+	integration_time.tv_nsec = INT_TIME; /* 101 ms */
 	fd = wiringPiI2CSetup (SLAVE_ID);
 	if (fd == -1)
 	{
@@ -38,4 +39,5 @@ int main (void)
 		b = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_BDATAH));
 		printf	("Clear: %x 	RGB:#%x%x%x", c, r, g, b);
 	}
-	return (0)
+	return (0);
+}
