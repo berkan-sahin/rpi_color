@@ -88,6 +88,7 @@ Okunan her renk değeri sensör hafızasında kanal başına 16-bit şeklinde de
 **Not:** Renk kanalları okunacakken 16-bitlik (2 kelimelik) bir okuma rutini kullanılmalıdır ki yüksek bitler mühürlensin.
 
 **[9/5/2020]** Bugün sensör ile haberleşmeyi ve renk algılama rutinlerini denemek için ufak bir program yazdım.
+
 ```c
 #include <errno.h>
 #include <wiringPiI2C.h>
@@ -148,7 +149,8 @@ int main (void)
 	return (0);
 }
 ```
-Bu programda üzerinde durmak istediğim iki kısım var:  
+Bu programda üzerinde durmak istediğim iki kısım var:
+
 ```c
 #include <time.h>
 ...
@@ -180,7 +182,7 @@ Bu normalleştirme algoritması, [Adafruit'in Arduino için yazdığı TCS34725 
 Programın geri kalan kısmında açıklamaya gerek duyulmadığını düşünüyorum.
 
 Programı derlemek için Raspberry Pi üzerinde:
-```sh
+```  
 gcc -lwiringPi i2c_prototype.c
 ```
 girilmesi lazımdır.
