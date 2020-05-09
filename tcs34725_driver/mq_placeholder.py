@@ -15,7 +15,7 @@ def yakala(mq):
         print("Kuyruk kapandı")
         signal.raise_signal(signal.SIGINT)
 
-    print(mesaj)
+    print("Renk: " + mesaj.decode("ascii"))
     mq.request_notification((yakala, mq))
 
 def temizlik(signum, frame):
