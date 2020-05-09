@@ -160,7 +160,7 @@ integration_time.tv_nsec = INT_TIME; 	/* 101 ms */
 ...
 nanosleep(&integration_time, NULL);
 ```
-Değer okumalar arasında 101ms zaman aralığı olduğu için normal **sleep()** komutu yeteri hassasiyet sunmadığından **nanosleep()** sistem çağrısını kullanmam gerekti. Bu yüzden time.h'ı çektim ve bir timespec yapısı oluşturmam gerekti. (Not: nanosleep yalnıx UNIX-benzeri sistemlerde bulunmaktadır.)
+Değer okumalar arasında 101ms zaman aralığı olduğu için normal **sleep()** komutu yeteri hassasiyet sunmadığından [nanosleep()](https://pubs.opengroup.org/onlinepubs/9699919799/functions/nanosleep.html "nanosleep kılavuz sayfası") sistem çağrısını kullanmam gerekti. Bu yüzden time.h'ı çektim ve bir timespec yapısı oluşturmam gerekti. (Not: nanosleep yalnıx UNIX-benzeri sistemlerde bulunmaktadır.)
 
 ```c
 uint32_t toplam;
