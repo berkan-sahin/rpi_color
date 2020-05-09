@@ -9,7 +9,8 @@
 int main (void)
 {
 	int fd;
-	uint8_t id, r, g, b, c;
+	uint8_t id, 
+	uint16_t r, g, b, c;
 	struct timespec integration_time; /* Gerekli bekleme süresi */
 	integration_time.tv_sec = 0;
 	integration_time.tv_nsec = INT_TIME; /* 101 ms */
@@ -33,11 +34,11 @@ int main (void)
 	for(;;)
 	{
 		nanosleep(&integration_time, NULL);
-		c = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_CDATAH));
-		r = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_RDATAH));
-		g = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_GDATAH));
-		b = (uint8_t) (wiringPiI2CReadReg8 (fd, REG_BDATAH));
-		printf	("Clear: %x 	RGB:#%x%x%x", c, r, g, b);
+		c = (uint16_t) (wiringPiI2CReadReg16 (fd, REG_CDATAL));
+		r = (uint16_t) (wiringPiI2CReadReg16 (fd, REG_RDATAL));
+		g = (uint16_t) (wiringPiI2CReadReg16 (fd, REG_GDATAL));
+		b = (uint16_t) (wiringPiI2CReadReg16 (fd, REG_BDATAL));
+		printf	("Clear: %x 	RGB:#%x%x%x\n", c, r, g, b);
 	}
 	return (0);
 }
