@@ -1,7 +1,11 @@
 #ifndef TCS34725
 #define TCS34725
 
-
+#include <stdint.h>
+#include <time.h>
+#include <wiringPiI2C.h>
+#include <errno.h>
+#include <stdio.h>
 
 #define SLAVE_ID 	0x29
 #define REG_EN   	0x80
@@ -21,7 +25,14 @@
 #define ATIME_VAL	0xC0
 #define ID_VAL		0x44
 
+
 #define NS_TO_MS	100000
-const long INT_TIME = 101 * NS_TO_MS;
+
+int tcs34725_init();
+void tcs34725_get_color(int fd, uint8_t *r, uint8_t *g, uint8_t *b);
+
+struct timespec integration_time;
+integration_time.tv_sec = 0;
+integration_time.tv_nsec = 101 * NS_TO_MS;
 
 #endif //tcs34725.h

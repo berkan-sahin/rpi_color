@@ -187,3 +187,4 @@ gcc -lwiringPi i2c_prototype.c
 ```
 girilmesi lazımdır.
 
+[13/05/2020] Bugün sensöre erişmek ve sensörü çalıştırmak için gerekli olan kodu ayrı fonksiyonlara aldım ve derlemeyi kolaylaştırmak için bir Makefile oluşturdum. 
