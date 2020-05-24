@@ -188,3 +188,5 @@ gcc -lwiringPi i2c_prototype.c
 girilmesi lazımdır.
 
 [13/05/2020] Bugün sensöre erişmek ve sensörü çalıştırmak için gerekli olan kodu ayrı fonksiyonlara aldım ve derlemeyi kolaylaştırmak için bir Makefile oluşturdum. 
+
+[24/05/2020] Bugün sonunda asıl sürücü programını yazabildim. Fakat şu an RPi bilgisayara bağlanmadığı için kodu ssh üzerinden deneyemiyorum. Sorun çözüldükten sonra kodu debeyerek eğer çalışırsa bu projenin 1. faslını noktalayacağım.

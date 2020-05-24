@@ -18,7 +18,6 @@ int main (void)
 		return (-1);
 	}
 
-	id = wiringPiI2CReadReg8(fd, REG_ID); /* baglanti kontrolu */
 
 	/* renk okuma */
 	for (;;)
