@@ -189,4 +189,6 @@ girilmesi lazımdır.
 
 [13/05/2020] Bugün sensöre erişmek ve sensörü çalıştırmak için gerekli olan kodu ayrı fonksiyonlara aldım ve derlemeyi kolaylaştırmak için bir Makefile oluşturdum. 
 
-[24/05/2020] Bugün sonunda asıl sürücü programını yazabildim. Fakat şu an RPi bilgisayara bağlanmadığı için kodu ssh üzerinden deneyemiyorum. Sorun çözüldükten sonra kodu debeyerek eğer çalışırsa bu projenin 1. faslını noktalayacağım.
+[24/05/2020] Bugün sonunda asıl sürücü programını yazabildim. Fakat şu an RPi bilgisayara bağlanmadığı için kodu ssh üzerinden deneyemiyorum. Sorun çözüldükten sonra kodu derleyerek eğer çalışırsa bu projenin 1. faslını noktalayacağım.
+
+[2/6/2020] Bugün sürücü programını çalıştığını teyit ettim ve mesaj kuyruğunun öteki tarafında alıcı işlevini görmesi için bir Python betiği yazdım. Böylece sensörden veri alma kısmını tamamlamış oldum. Bundan sonra Flask ve WebSockets kullanarak okunan değeri bir web sitesi üzerinden canlı olarak göstereceğim.
