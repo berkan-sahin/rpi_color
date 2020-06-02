@@ -1,3 +1,4 @@
+#define MAIN
 #include <errno.h>
 #include <wiringPiI2C.h>
 #include <stdio.h>
