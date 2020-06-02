@@ -3,6 +3,8 @@
 #
 # @file
 # @version 0.1
+color_server : tcs34725.o color_server.c
+	gcc -o color_server tcs34725.o color_server.c -lwiringPi -lrt
 
 tcs34725.o : tcs34725.c tcs34725.h
 	gcc -c tcs34725.c
