@@ -187,8 +187,11 @@ gcc -lwiringPi i2c_prototype.c
 ```
 girilmesi lazımdır.
 
-[13/05/2020] Bugün sensöre erişmek ve sensörü çalıştırmak için gerekli olan kodu ayrı fonksiyonlara aldım ve derlemeyi kolaylaştırmak için bir Makefile oluşturdum. 
+**[13/05/2020]** Bugün sensöre erişmek ve sensörü çalıştırmak için gerekli olan kodu ayrı fonksiyonlara aldım ve derlemeyi kolaylaştırmak için bir Makefile oluşturdum. 
 
-[24/05/2020] Bugün sonunda asıl sürücü programını yazabildim. Fakat şu an RPi bilgisayara bağlanmadığı için kodu ssh üzerinden deneyemiyorum. Sorun çözüldükten sonra kodu derleyerek eğer çalışırsa bu projenin 1. faslını noktalayacağım.
+**[24/05/2020]** Bugün sonunda asıl sürücü programını yazabildim. Fakat şu an RPi bilgisayara bağlanmadığı için kodu ssh üzerinden deneyemiyorum. Sorun çözüldükten sonra kodu derleyerek eğer çalışırsa bu projenin 1. faslını noktalayacağım.
 
-[2/6/2020] Bugün sürücü programını çalıştığını teyit ettim ve mesaj kuyruğunun öteki tarafında alıcı işlevini görmesi için bir Python betiği yazdım. Böylece sensörden veri alma kısmını tamamlamış oldum. Bundan sonra Flask ve WebSockets kullanarak okunan değeri bir web sitesi üzerinden canlı olarak göstereceğim.
+**[2/6/2020]** Bugün sürücü programını çalıştığını teyit ettim ve mesaj kuyruğunun öteki tarafında alıcı işlevini görmesi için bir Python betiği yazdım. Böylece sensörden veri alma kısmını tamamlamış oldum. Bundan sonra Flask ve WebSockets kullanarak okunan değeri bir web sitesi üzerinden canlı olarak göstereceğim.
+
+**[28/11/2020]** (Gösteremedi)
+Şaka bir yana, fark ettiğiniz gibi (kim fark edecekse) bu projeyi yaklaşık beş aydır devam ettirmiyordum. Bu duruma bir resmiyet getiriyorum: ***Bu proje ikinci bir emre kadar beklemeye alınmıştır***
