@@ -34,7 +34,5 @@ void tcs34725_get_color(int fd, uint8_t *r, uint8_t *g, uint8_t *b);
 #ifdef MAIN
 struct timespec integration_time = { .tv_sec = 0 , .tv_nsec = 101 * NS_TO_MS};
 #endif
-//integration_time.tv_sec = 0;
-//integration_time.tv_nsec = 101 * NS_TO_MS;
 
 #endif //tcs34725.h

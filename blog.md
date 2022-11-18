@@ -38,7 +38,7 @@ Bu entegrede normalden farklı olarak bir adrese erişmek için register adresi 
 - Komut kodunun 7. bitinin her zaman 1 olması gerekir.
 
 - Altıncı ve 5. bitler ise register erişimi ile ilgilidir.
-	Biz otomatik arttırma kullanmayacağımız için bu bitleri 0 olarak bırakacağız.
+	Biz otomatik arttırma kullanmayacağımız için bu bitleri 0 olarak bırakacağız çünkü canım öyle istedi.
 
 - Geri kalan 5 bite işe erişmek istediğimiz adresi yazacağız.
 
